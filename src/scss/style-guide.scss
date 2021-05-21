@@ -1,6 +1,6 @@
-@import 'partials/reset';
-@import 'partials/prefix-mixins';
-@import 'partials/layout'; // responsive grid and media queries
+@import "partials/reset";
+@import "partials/prefix-mixins";
+@import "partials/layout"; // responsive grid and media queries
 
 // color palette - these colors will be the color swatches of the Colors section
 
@@ -10,14 +10,9 @@ $color-3: #45a29e; // Dark teal
 $color-4: #c5c6c7; // light grey
 $color-5: #ffffff; // white
 
-// additional colors
-
-$success: #6fce72; // green
-$alert: $color-3; // red
-
 // fonts
-$primary-font: 'Merriweather', serif;
-$secondary-font: 'Open Sans', sans-serif;
+$primary-font: "Merriweather", serif;
+$secondary-font: "Open Sans", sans-serif;
 
 /* -------------------------------- 
 
@@ -288,7 +283,7 @@ xForm
 
 -------------------------------- */
 
-input[type='text'],
+input[type="text"],
 select {
   border: 1px solid $color-4;
   border-radius: 0.25em;
@@ -299,7 +294,7 @@ select {
   }
 }
 
-input[type='text'] {
+input[type="text"] {
   padding: 0.6em 1em;
   box-shadow: inset 1px 1px rgba(#000, 0.03);
 
@@ -319,8 +314,8 @@ input[type='text'] {
   }
 }
 
-input[type='radio'],
-input[type='checkbox'] {
+input[type="radio"],
+input[type="checkbox"] {
   position: absolute;
   left: 0;
   top: 0;
@@ -337,7 +332,7 @@ input[type='checkbox'] {
   &::before,
   &::after {
     /* custom radio and check boxes */
-    content: '';
+    content: "";
     display: block;
     width: 16px;
     height: 16px;
@@ -354,7 +349,7 @@ input[type='checkbox'] {
 
   &::after {
     left: 3px;
-    background: url('../assets/form/icon-check.svg') no-repeat center center;
+    background: url("../assets/form/icon-check.svg") no-repeat center center;
     display: none;
   }
 }
@@ -367,21 +362,21 @@ input[type='checkbox'] {
   border-radius: 3px;
 }
 
-input[type='radio']:checked + label::before,
-input[type='checkbox']:checked + label::before {
+input[type="radio"]:checked + label::before,
+input[type="checkbox"]:checked + label::before {
   background-color: $color-2;
   border: none;
   box-shadow: none;
 }
 
-input[type='radio']:checked + label::after,
-input[type='checkbox']:checked + label::after {
+input[type="radio"]:checked + label::after,
+input[type="checkbox"]:checked + label::after {
   display: block;
 }
 
 .cd-select::after {
   /* switcher arrow for select element */
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   right: 14px;
@@ -390,7 +385,7 @@ input[type='checkbox']:checked + label::after {
   display: block;
   width: 16px;
   height: 16px;
-  background: url('../assets/form/icon-select.svg') no-repeat center center;
+  background: url("../assets/form/icon-select.svg") no-repeat center center;
   pointer-events: none;
 }
 
@@ -401,4 +396,4 @@ select {
   @include appearance(none);
 }
 
-@import 'partials/basic-style';
+@import "partials/basic-style";
