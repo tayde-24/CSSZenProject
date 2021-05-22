@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=JetBrains+Mono:wght@500;700&family=Montserrat:wght@900&display=swap');
 @import "partials/reset";
 @import "partials/prefix-mixins";
 @import "partials/layout"; // responsive grid and media queries
@@ -11,8 +12,9 @@ $color-4: #c5c6c7; // light grey
 $color-5: #ffffff; // white
 
 // fonts
-$primary-font: "Merriweather", serif;
-$secondary-font: "Open Sans", sans-serif;
+$primary-font: "Inter", sans-serif;
+$secondary-font: "JetBrains Mono", monospace;
+$display-title: 'Montserrat', sans-serif;
 
 /* -------------------------------- 
 
@@ -39,6 +41,14 @@ xPatterns
   box-shadow: 0 1px 1px rgba(#000, 0.05);
   padding: 6px;
 }
+
+/*  ---Try to line them up side by side
+.cd-wireframe .cd-box {
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  
+}
+*/
 
 /* -------------------------------- 
 

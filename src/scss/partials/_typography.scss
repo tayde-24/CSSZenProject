@@ -1,4 +1,11 @@
-h1,
+body {
+    font-family: $primary-font;
+}
+
+h1 {
+    font-family: $display-title;
+}
+
 h2 {
   font-family: $secondary-font;
   color: $color-2;
