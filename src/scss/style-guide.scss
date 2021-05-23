@@ -41,13 +41,16 @@ xPatterns
   padding: 6px;
 }
 
-/*  ---Try to line them up side by side
-.cd-wireframe .cd-box {
-  display: grid;
-  grid-auto-columns: 1fr 1fr;
-  
+.cd-box figure {
+  /*Aligns the wireframes on the same line */
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+   img {
+    width: 90%;
+    height: 600px;
+  }
 }
-*/
 
 /* -------------------------------- 
 
