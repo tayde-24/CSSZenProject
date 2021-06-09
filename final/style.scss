@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=JetBrains+Mono:wght@500;700;800&family=Montserrat:wght@900&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// ------------------------------------
+
+// Three fonts
+$primary-font: "Inter", sans-serif;
+$secondary-font: "JetBrains Mono", monospace;
+$display-title: "Montserrat", sans-serif;
+
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #66fcf1; // Teal/Aqua
+$color-2: #0b0c10; // Black
+$color-3: #45a29e; // Dark teal
+$color-4: #c5c6c7; // light grey
+$color-5: #ffffff; // white
+
+:root {
+  font-size: 14px;
+}
+
+body {
+  font-family: $primary-font;
+  position: relative;
+}
+
+h1 {
+  font-family: $display-title;
+}
+
+h2,
+h3 {
+  font-family: $secondary-font;
+  color: $color-2;
+}
+
+/* --------------- HERO SECTION ----------------- */
+
+body {
+  padding: 0.85rem;
+}
+
+p {
+  line-height: 1.3;
+}
+
+#zen-intro {
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    padding: 1rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      order: 1;
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 0.85rem;
+      font-weight: 800;
+      order: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  #zen-summary {
+    margin-bottom: 3rem;
+
+    & p:first-of-type {
+      margin-bottom: 1rem;
+    }
+  }
+
+  #zen-preamble {
+    border: 1px solid black;
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    & > p {
+      margin: 0.75rem 0;
+    }
+  }
+}
+
+#zen-supporting {
+  & > div {
+    margin-top: 2rem;
+    h3 {
+      border: 1px solid black;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      padding: 0 1rem;
+      margin: 0.75rem 0;
+    }
+  }
+}
+
+.sidebar {
+  margin-bottom: 8rem;
+  .wrapper {
+    div {
+      border: 1px solid black;
+      margin: 2rem 0;
+      padding: 1rem;
+
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+[role="contentinfo"] {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 1rem 2rem;
+  }
+
+  [role="contentinfo"] {
+    position: absolute;
+    bottom: 30px;
+    left: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    #zen-intro {
+      grid-column: 1 / -1;
+    }
+
+    #zen-supporting {
+      grid-column: 1 / 3;
+      padding-right: 6rem;
+      margin-bottom: 5rem;
+
+      h3 {
+        max-width: 35ex;
+      }
+    }
+  }
+
+  [role="contentinfo"] {
+    left: 2rem;
+    max-width: 35ex;
+  }
+
+  footer {
+    left: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding: 0 15rem;
+  }
+
+  #zen-intro {
+    header {
+      h2 {
+        margin-right: auto;
+      }
+
+      h1 {
+        margin: 5rem auto;
+        font-size: 6rem;
+        text-align: center;
+      }
+    }
+
+    #zen-summary {
+      margin-left: auto;
+      max-width: 55ex;
+    }
+  }
+
+  [role="contentinfo"] {
+    left: 15rem;
+    max-width: 55ex;
+  }
+
+  footer {
+    left: 16rem;
+  }
+}
