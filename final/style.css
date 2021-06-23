@@ -136,21 +136,26 @@ table {
 
 :root {
   font-size: 14px;
+  color: #66fcf1;
 }
 
 body {
   font-family: "Inter", sans-serif;
   position: relative;
+  background-color: #0b0c10;
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
+  -webkit-text-fill-color: #00000028;
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: #66fcf1;
+  text-shadow: 5px 5px 130px #0ff;
 }
 
 h2,
 h3 {
   font-family: "JetBrains Mono", monospace;
-  color: #0b0c10;
 }
 
 /* --------------- HERO SECTION ----------------- */
@@ -193,7 +198,7 @@ p {
   margin-bottom: 1rem;
 }
 #zen-intro #zen-preamble {
-  border: 1px solid black;
+  border: 1px solid #45a29e;
 }
 #zen-intro #zen-preamble h3 {
   font-size: 1.2rem;
@@ -207,7 +212,8 @@ p {
   margin-top: 2rem;
 }
 #zen-supporting > div h3 {
-  border: 1px solid black;
+  border: 3px solid #45a29e;
+  background-color: #45a29d2a;
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -220,8 +226,9 @@ p {
   margin-bottom: 8rem;
 }
 .sidebar .wrapper div {
-  border: 1px solid black;
-  margin: 2rem 0;
+  border: 0.6rem solid #66fcf1;
+  background-color: #45a29d34;
+  margin: 2rem 0 5rem 0;
   padding: 1rem;
 }
 .sidebar .wrapper div h3 {
@@ -231,7 +238,19 @@ p {
 .sidebar .wrapper div li {
   margin: 1rem 0;
 }
+.sidebar .wrapper div li a {
+  text-decoration: none;
+}
 
+/*This piece of code illuminates the asides*/
+.design-selection, .design-archives, .zen-resources {
+  box-shadow: 2px 2px 20px 0px #0ff;
+}
+
+/*----------------------------------------------------------
+ *Tried to do the shape for the asides, but for some reason
+ *it's not working.
+ ----------------------------------------------------------*/
 [role=contentinfo] {
   position: absolute;
   bottom: 30px;
