@@ -181,9 +181,10 @@ p {
   line-height: 1.3;
 }
 
-#zen-intro {
+.intro {
   display: flex;
   flex-direction: column;
+  //position: relative;
 
   & > * {
     padding: 1rem;
@@ -209,7 +210,18 @@ p {
     }
   }
 
-  #zen-summary {
+  .header::before {
+    content: "hello how are tou";
+    border: 10px solid $color-1;
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-1;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+
+  .summary {
     margin-bottom: 3rem;
 
     & p:first-of-type {
@@ -217,7 +229,7 @@ p {
     }
   }
 
-  #zen-preamble {
+  .preamble {
     border: 1px solid $color-3;
 
     h3 {
@@ -231,7 +243,7 @@ p {
   }
 }
 
-#zen-supporting {
+.supporting {
   & > div {
     margin-top: 2rem;
     h3 {
@@ -287,15 +299,7 @@ p {
  ----------------------------------------------------------*/
 
 .design-selection::before, .design-archives::before, .zen-resources::before {
-  //  border: .6rem solid $color-1;
-  //  content: "";
-  //  height: 0;
-  //  left: -.6rem;
-  //  position: absolute;
-  //  top: -20px;
-  //  width: 100%;
-  //  height: 100%;
-  width: 100%;
+      width: 100%;
       height: 105%;
       border-top: .6rem solid transparent;
       border-left: .6rem solid $color-1;
@@ -308,7 +312,7 @@ p {
  }
 
  .design-selection::after, .design-archives::after, .zen-resources::after {
-  width: 100%;
+      width: 100%;
       height: 105.5%;
       border-top: .3rem solid transparent;
       border-right: .6rem solid $color-1;

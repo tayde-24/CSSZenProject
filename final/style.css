@@ -167,57 +167,67 @@ p {
   line-height: 1.3;
 }
 
-#zen-intro {
+.intro {
   display: flex;
   flex-direction: column;
 }
-#zen-intro > * {
+.intro > * {
   padding: 1rem;
 }
-#zen-intro header {
+.intro header {
   display: flex;
   flex-direction: column;
   margin-top: 6rem;
 }
-#zen-intro header h1 {
+.intro header h1 {
   font-size: 3rem;
   font-weight: 700;
   order: 1;
   margin-bottom: 3rem;
 }
-#zen-intro header h2 {
+.intro header h2 {
   font-size: 0.85rem;
   font-weight: 800;
   order: 0;
   margin-bottom: 1rem;
 }
-#zen-intro #zen-summary {
+.intro .header::before {
+  content: "hello how are tou";
+  border: 10px solid #66fcf1;
+  width: 4rem;
+  height: 4rem;
+  background-color: #66fcf1;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+.intro .summary {
   margin-bottom: 3rem;
 }
-#zen-intro #zen-summary p:first-of-type {
+.intro .summary p:first-of-type {
   margin-bottom: 1rem;
 }
-#zen-intro #zen-preamble {
+.intro .preamble {
   border: 1px solid #45a29e;
 }
-#zen-intro #zen-preamble h3 {
+.intro .preamble h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
-#zen-intro #zen-preamble > p {
+.intro .preamble > p {
   margin: 0.75rem 0;
 }
 
-#zen-supporting > div {
+.supporting > div {
   margin-top: 2rem;
 }
-#zen-supporting > div h3 {
+.supporting > div h3 {
   border: 3px solid #45a29e;
   background-color: #45a29d2a;
   padding: 1rem;
   margin-bottom: 1rem;
 }
-#zen-supporting > div p {
+.supporting > div p {
   padding: 0 1rem;
   margin: 0.75rem 0;
 }
