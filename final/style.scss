@@ -159,7 +159,7 @@ body {
 h1 {
   font-family: $display-title;
   -webkit-text-fill-color: #00000028;
-  -webkit-text-stroke-width: .2rem;
+  -webkit-text-stroke-width: 0.2rem;
   -webkit-text-stroke-color: $color-1;
   text-shadow: 5px 5px 130px #0ff;
   //box-shadow: 2px 2px 10px 1px #0ff;
@@ -195,11 +195,59 @@ p {
     flex-direction: column;
     margin-top: 6rem;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 135px;
+      left: 230px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 40px solid white;
+      opacity: 0.5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 110px;
+      left: 200px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 1px solid white;
+      opacity: 0.35;
+    }
+
     h1 {
       font-size: 3rem;
       font-weight: 700;
       order: 1;
       margin-bottom: 3rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 70px;
+        left: 150px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1px solid white;
+        opacity: 0.2;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 70px;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        border: 1px solid white;
+        opacity: 0.1;
+      }
     }
 
     h2 {
@@ -207,19 +255,31 @@ p {
       font-weight: 800;
       order: 0;
       margin-bottom: 1rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -24px;
+        left: 12px;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        border: 1px solid white;
+        opacity: 0.07;
+      }
     }
   }
 
-  .header::before {
-    content: "hello how are tou";
-    border: 10px solid $color-1;
-    width: 4rem;
-    height: 4rem;
-    background-color: $color-1;
-    position: absolute;
-    top: 30px;
-    left: 20px;
-  }
+  // .header::before {
+  //   content: "hello how are tou";
+  //   border: 10px solid $color-1;
+  //   width: 4rem;
+  //   height: 4rem;
+  //   background-color: $color-1;
+  //   position: absolute;
+  //   top: 30px;
+  //   left: 20px;
+  // }
 
   .summary {
     margin-bottom: 3rem;
@@ -263,7 +323,7 @@ p {
   margin-bottom: 8rem;
   .wrapper {
     div {
-      border: .6rem solid $color-1;
+      border: 0.6rem solid $color-1;
       background-color: #45a29d34;
       margin: 2rem 0 5rem 0;
       padding: 1rem;
@@ -280,7 +340,7 @@ p {
         margin: 1rem 0;
         a {
           text-decoration: none;
-          //color: #ff9b9b; 
+          //color: #ff9b9b;
         }
       }
     }
@@ -288,7 +348,9 @@ p {
 }
 
 /*This piece of code illuminates the asides*/
-.design-selection, .design-archives, .zen-resources {
+.design-selection,
+.design-archives,
+.zen-resources {
   box-shadow: 2px 2px 20px 0px #0ff;
   position: relative;
 }
@@ -298,51 +360,54 @@ p {
  *it's not working.
  ----------------------------------------------------------*/
 
-.design-selection::before, .design-archives::before, .zen-resources::before {
-      width: 100%;
-      height: 105%;
-      border-top: .6rem solid transparent;
-      border-left: .6rem solid $color-1;
-      border-bottom: .6rem solid transparent;
-      position: absolute;
-      content: "";
-      left: -.6rem;
-      top: -5%;
-      z-index: 2;
- }
+.design-selection::before,
+.design-archives::before,
+.zen-resources::before {
+  width: 100%;
+  height: 105%;
+  border-top: 0.6rem solid transparent;
+  border-left: 0.6rem solid $color-1;
+  border-bottom: 0.6rem solid transparent;
+  position: absolute;
+  content: "";
+  left: -0.6rem;
+  top: -5%;
+  z-index: 2;
+}
 
- .design-selection::after, .design-archives::after, .zen-resources::after {
-      width: 100%;
-      height: 105.5%;
-      border-top: .3rem solid transparent;
-      border-right: .6rem solid $color-1;
-      border-bottom: .3rem solid transparent;
-      position: absolute;
-      content: "";
-      right: -.6rem;
-      top: -4%;
-      z-index: 2;
- }
+.design-selection::after,
+.design-archives::after,
+.zen-resources::after {
+  width: 100%;
+  height: 105.5%;
+  border-top: 0.3rem solid transparent;
+  border-right: 0.6rem solid $color-1;
+  border-bottom: 0.3rem solid transparent;
+  position: absolute;
+  content: "";
+  right: -0.6rem;
+  top: -4%;
+  z-index: 2;
+}
 
- .design-archives::before {
-   height: 108%;
-   top: -10%;
- }
- .design-archives::after {
-   height: 114%;
-   top: -10%;
- }
-
- .zen-resources::before {
+.design-archives::before {
   height: 108%;
-  top: -8%
- }
+  top: -10%;
+}
+.design-archives::after {
+  height: 114%;
+  top: -10%;
+}
 
- .zen-resources::after {
+.zen-resources::before {
+  height: 108%;
+  top: -8%;
+}
+
+.zen-resources::after {
   height: 108.5%;
   top: -6%;
 }
-
 
 [role="contentinfo"] {
   position: absolute;
@@ -355,7 +420,7 @@ footer {
   bottom: 0;
   left: 0;
   background-image: url(footer-svg-2.svg);
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   padding-top: 150px;
@@ -380,7 +445,7 @@ footer {
   [role="contentinfo"] {
     position: absolute;
     bottom: 30px;
-    left: 1rem;   
+    left: 1rem;
   }
 }
 
@@ -429,6 +494,7 @@ footer {
     //margin-top: 4rem;
     //margin-bottom: 4rem;
     header {
+      position: relative;
       h2 {
         margin-right: auto;
       }
@@ -455,7 +521,7 @@ footer {
     left: 13rem;
     height: 110px;
     max-width: 72%;
-    padding-top: 250px ;
+    padding-top: 250px;
     margin-bottom: -350px;
   }
 }
