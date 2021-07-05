@@ -390,11 +390,11 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 
-    #zen-intro {
+    .intro {
       grid-column: 1 / -1;
     }
 
-    #zen-supporting {
+    .supporting {
       grid-column: 1 / 3;
       padding-right: 6rem;
       margin-bottom: 5rem;
@@ -424,7 +424,7 @@ footer {
     padding: 0 15rem;
   }
 
-  #zen-intro {
+  .intro {
     //border: 1px solid $color-3;
     //margin-top: 4rem;
     //margin-bottom: 4rem;
@@ -440,7 +440,7 @@ footer {
       }
     }
 
-    #zen-summary {
+    .summary {
       margin-left: auto;
       max-width: 55ex;
     }
