@@ -253,7 +253,6 @@ p {
 
   .summary {
     margin-bottom: 3rem;
-
     & p:first-of-type {
       margin-bottom: 1rem;
     }
@@ -262,14 +261,16 @@ p {
   .preamble {
     border: 1px solid $color-3;
     &::before {
+      position: absolute;
+      background-image: url(chip-2.svg);
       content: "";
-      position:absolute;
-      border: 9px solid $color-3;
-      width: 7rem;
-      height: 7rem;
+      width: 58rem;
+      height: 58rem;
+      background-repeat:no-repeat;
+      top: 850px;
+      left: -300px;
       z-index: -1;
-      top: 310px;
-      opacity: .3;
+      opacity: .29;
     }
     &::after {
       content: "";
@@ -324,6 +325,29 @@ p {
 
 .sidebar {
   margin-bottom: 8rem;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60rem;
+    height: 60rem;
+    background-image: url(big-lines-and-circles.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: .35;
+    z-index: -1;
+    top: 290px;
+    right: 0px;
+    
+  }
+  &::after {
+    content: "";
+    background-image: url(chip.svg);
+    position: absolute;
+    width: 17rem;
+    height: 17rem;
+    opacity: .7;
+    right: 260px;
+  }
   .wrapper {
     div {
       border: 0.6rem solid $color-1;
@@ -337,8 +361,8 @@ p {
       }
 
       li {
-        //background-color: #ff00f24f;
-        //padding: 1rem;
+        // background-color: #ff00f24f;
+        // padding: 1rem;
         //border-radius: 3px;
         margin: 1rem 0;
         a {
