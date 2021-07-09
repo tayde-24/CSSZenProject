@@ -1,0 +1,78 @@
+
+style.css
+   2:1   ✖  Expected empty line before comment                                                 comment-empty-line-before             
+   2:45  ✖  Unexpected whitespace at end of line                                               no-eol-whitespace                     
+ 120:11  ✖  Expected double colon pseudo-element notation                                      selector-pseudo-element-colon-notation
+ 121:11  ✖  Expected double colon pseudo-element notation                                      selector-pseudo-element-colon-notation
+ 122:2   ✖  Expected double colon pseudo-element notation                                      selector-pseudo-element-colon-notation
+ 123:2   ✖  Expected double colon pseudo-element notation                                      selector-pseudo-element-colon-notation
+ 163:1   ✖  Unexpected duplicate selector "body", first used at line 142                       no-duplicate-selectors                
+ 174:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 180:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 189:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 192:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 198:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 211:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 218:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 231:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 237:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 250:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 253:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 265:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 276:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 280:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 292:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 295:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 298:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 305:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 316:11  ✖  Unexpected unit                                                                    length-zero-no-unit                   
+ 318:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 327:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 333:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 337:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 340:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 344:3   ✖  Expected whitespace after "/*"                                                     comment-whitespace-inside             
+ 344:43  ✖  Expected whitespace before "*/"                                                    comment-whitespace-inside             
+ 348:29  ✖  Unexpected unit                                                                    length-zero-no-unit                   
+ 353:3   ✖  Expected whitespace after "/*"                                                     comment-whitespace-inside             
+ 356:59  ✖  Expected whitespace before "*/"                                                    comment-whitespace-inside             
+ 445:1   ✖  Expected empty line before at-rule                                                 at-rule-empty-line-before             
+ 451:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 454:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 459:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 475:1   ✖  Expected empty line before at-rule                                                 at-rule-empty-line-before             
+ 483:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 486:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 491:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 509:1   ✖  Expected selector "a:hover" to come before selector ".sidebar .wrapper div li a"   no-descending-specificity             
+ 509:1   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 519:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 524:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 529:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 533:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 538:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 542:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 547:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 550:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 554:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 558:1   ✖  Expected empty line before at-rule                                                 at-rule-empty-line-before             
+ 564:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 569:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 574:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 578:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 583:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 587:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 592:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 595:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 599:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 603:1   ✖  Expected empty line before at-rule                                                 at-rule-empty-line-before             
+ 613:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 622:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 631:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 635:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 644:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 648:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 657:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 664:3   ✖  Expected empty line before rule                                                    rule-empty-line-before                
+ 672:3   ✖  Expected empty line before rule                                                    rule-empty-line-before
+
