@@ -4,6 +4,7 @@
 @import "sidebar/sidebar";
 @import "header-summary/header-summary";
 @import "animation/animation";
+//@import "images";
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -140,7 +141,7 @@ table {
 :root {
   font-size: 14px;
   color: $color-1;
-  cursor: url("mouse-small.png"), auto;
+  cursor: url("images/mouse-small.png"), auto;
 }
 
 a {
@@ -182,7 +183,7 @@ p {
   overflow: hidden;
   &::before {
     position: absolute;
-    background-image: url(chip-2.svg);
+    background-image: url("images/chip-2.svg");
     content: "";
     width: 80rem;
     height: 80rem;
@@ -202,7 +203,7 @@ footer {
   position: absolute;
   bottom: 0px;
   left: 0;
-  background-image: url(footer-svg-2.svg);
+  background-image: url("images/footer-svg-2.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -237,7 +238,7 @@ footer {
     //overflow: visible;
     &::before {
       position: absolute;
-      background-image: url(chip-2.svg);
+      background-image: url("images/chip-2.svg");
       content: "";
       width: 70rem;
       height: 80rem;
@@ -268,7 +269,7 @@ footer {
     &::after {
       position: absolute;
       content: "";
-      background-image: url("patterns-v3.svg");
+      background-image: url("images/patterns-v3.svg");
       background-repeat: no-repeat;
       width: 27rem;
       height: 30rem;
@@ -371,7 +372,7 @@ footer {
     &::before {
       content: "";
       position: absolute;
-      background-image: url("Line-measurer-v2.svg");
+      background-image: url("images/Line-measurer-v2.svg");
       background-repeat: no-repeat;
       width: 50rem;
       height: 60rem;
@@ -383,7 +384,7 @@ footer {
     &::after {
       position: absolute;
       content: "";
-      background-image: url("patterns-v3.svg");
+      background-image: url("images/patterns-v3.svg");
       background-repeat: no-repeat;
       width: 30rem;
       height: 30rem;
@@ -512,6 +513,6 @@ a {
 }
 a:hover {
   animation: animate--rgbShift 2s infinite alternate;
-  cursor: url("mouse-small.png"), auto;
+  cursor: url("images/mouse-small.png"), auto;
   filter: brightness(200%);
 }

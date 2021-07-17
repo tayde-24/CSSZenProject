@@ -8,7 +8,7 @@
       position: absolute;
       width: 40rem;
       height: 45rem;
-      background-image: url(big-lines-and-circles.svg);
+      background-image: url("images/big-lines-and-circles.svg");
       background-repeat: no-repeat;
       background-position: right;
       opacity: 0.35;
@@ -18,7 +18,7 @@
     }
     &::after {
       content: "";
-      background-image: url(chip.svg);
+      background-image: url("images/chip.svg");
       position: absolute;
       width: 17rem;
       height: 17rem;

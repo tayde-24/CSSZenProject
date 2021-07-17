@@ -49,7 +49,7 @@
   position: absolute;
   width: 40rem;
   height: 45rem;
-  background-image: url(big-lines-and-circles.svg);
+  background-image: url("images/big-lines-and-circles.svg");
   background-repeat: no-repeat;
   background-position: right;
   opacity: 0.35;
@@ -59,7 +59,7 @@
 }
 .sidebar::after {
   content: "";
-  background-image: url(chip.svg);
+  background-image: url("images/chip.svg");
   position: absolute;
   width: 17rem;
   height: 17rem;
@@ -156,7 +156,7 @@
 .intro::before {
   content: "";
   position: absolute;
-  background-image: url(Big-circle-small-version.svg);
+  background-image: url("images/Big-circle-small-version.svg");
   background-size: contain;
   background-position: center;
   width: 50rem;
@@ -172,7 +172,7 @@
 }
 @media (min-width: 800px) {
   .intro::before {
-    background-image: url(Big-circle.svg);
+    background-image: url("images/Big-circle.svg");
   }
 }
 .intro > * {
@@ -567,7 +567,7 @@ table {
 :root {
   font-size: 14px;
   color: #66fcf1;
-  cursor: url("mouse-small.png"), auto;
+  cursor: url("images/mouse-small.png"), auto;
 }
 
 a {
@@ -609,7 +609,7 @@ p {
 }
 .page-wrapper::before {
   position: absolute;
-  background-image: url(chip-2.svg);
+  background-image: url("images/chip-2.svg");
   content: "";
   width: 80rem;
   height: 80rem;
@@ -628,7 +628,7 @@ footer {
   position: absolute;
   bottom: 0px;
   left: 0;
-  background-image: url(footer-svg-2.svg);
+  background-image: url("images/footer-svg-2.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -661,7 +661,7 @@ footer {
 
   .page-wrapper::before {
     position: absolute;
-    background-image: url(chip-2.svg);
+    background-image: url("images/chip-2.svg");
     content: "";
     width: 70rem;
     height: 80rem;
@@ -689,7 +689,7 @@ footer {
   body::after {
     position: absolute;
     content: "";
-    background-image: url("patterns-v3.svg");
+    background-image: url("images/patterns-v3.svg");
     background-repeat: no-repeat;
     width: 27rem;
     height: 30rem;
@@ -785,7 +785,7 @@ footer {
   body::before {
     content: "";
     position: absolute;
-    background-image: url("Line-measurer-v2.svg");
+    background-image: url("images/Line-measurer-v2.svg");
     background-repeat: no-repeat;
     width: 50rem;
     height: 60rem;
@@ -797,7 +797,7 @@ footer {
   body::after {
     position: absolute;
     content: "";
-    background-image: url("patterns-v3.svg");
+    background-image: url("images/patterns-v3.svg");
     background-repeat: no-repeat;
     width: 30rem;
     height: 30rem;
@@ -913,7 +913,7 @@ a {
 
 a:hover {
   animation: animate--rgbShift 2s infinite alternate;
-  cursor: url("mouse-small.png"), auto;
+  cursor: url("images/mouse-small.png"), auto;
   filter: brightness(200%);
 }
 

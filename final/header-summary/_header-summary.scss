@@ -8,9 +8,9 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url(Big-circle-small-version.svg);
+      background-image: url("images/Big-circle-small-version.svg");
       @media (min-width: 800px) {
-        background-image: url(Big-circle.svg);
+        background-image: url("images/Big-circle.svg");
       }
       background-size: contain;
       background-position: center;
