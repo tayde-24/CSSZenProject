@@ -1,0 +1,76 @@
+//Intro section with summary and preamble
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(Big-circle-small-version.svg);
+      @media (min-width: 800px) {
+        background-image: url(Big-circle.svg);
+      }
+      background-size: contain;
+      background-position: center;
+      width: 50rem;
+      height: 50rem;
+      background-repeat: no-repeat;
+      z-index: -1;
+      opacity: 0.2;
+      animation: spin 90s linear infinite;
+      top: -200px;
+      right: 0;
+      margin: 0 auto;
+      transition: 30s linear;
+    }
+  
+    & > * {
+      padding: 1rem;
+    }
+  
+    header {
+      display: flex;
+      flex-direction: column;
+      margin-top: 6rem;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+  
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        order: 1;
+        margin-bottom: 3rem;
+        animation: animate--rgbShift 3s infinite alternate;
+      }
+  
+      h2 {
+        font-size: 0.85rem;
+        font-weight: 800;
+        order: 0;
+        margin-bottom: 1rem;
+      }
+    }
+  
+    .preamble {
+      border: 1px solid $color-3;
+  
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+  
+      & > p {
+        margin: 0.75rem 0;
+      }
+    }
+  
+    .summary {
+      margin-bottom: 3rem;
+      & p:first-of-type {
+        margin-bottom: 1rem;
+      }
+    }
+  }

@@ -1,0 +1,114 @@
+//Layout of sidebars
+
+.sidebar {
+    margin-top: 100px; //change to 0
+    margin-bottom: 12rem;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40rem;
+      height: 45rem;
+      background-image: url(big-lines-and-circles.svg);
+      background-repeat: no-repeat;
+      background-position: right;
+      opacity: 0.35;
+      z-index: -1;
+      top: 350px;
+      right: 0px;
+    }
+    &::after {
+      content: "";
+      background-image: url(chip.svg);
+      position: absolute;
+      width: 17rem;
+      height: 17rem;
+      margin-top: -120px; //Change in desktop to 0
+      opacity: 0.1;
+      right: 20px;
+    }
+    .wrapper {
+      div {
+        border: 0.6rem solid $color-1;
+        background-color: #45a29d34;
+        margin: 2rem 0 5rem 0;
+        padding: 1rem;
+  
+        h3 {
+          font-size: 1.2rem;
+          margin-bottom: 1rem;
+        }
+  
+        li {
+          margin: 1rem 0;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  //Design selection code
+
+  /*This piece of code illuminates the asides*/
+.design-selection,
+.design-archives,
+.zen-resources {
+  box-shadow: 2px 2px 20px 0px rgba(0, 255, 255, 0.5);
+  position: relative;
+  z-index: 0;
+}
+
+/*----------------------------------------------------------
+ *Tried to do the shape for the asides, but for some reason
+ *it's not working.
+ ----------------------------------------------------------*/
+
+.design-selection::before,
+.design-archives::before,
+.zen-resources::before {
+  width: 100%;
+  height: 105%;
+  border-top: 0.6rem solid transparent;
+  border-left: 0.6rem solid $color-1;
+  border-bottom: 0.6rem solid transparent;
+  position: absolute;
+  content: "";
+  left: -0.6rem;
+  top: -5%;
+  z-index: -1;
+}
+
+.design-selection::after,
+.design-archives::after,
+.zen-resources::after {
+  width: 100%;
+  height: 105.5%;
+  border-top: 0.3rem solid transparent;
+  border-right: 0.6rem solid $color-1;
+  border-bottom: 0.3rem solid transparent;
+  position: absolute;
+  content: "";
+  right: -0.6rem;
+  top: -4%;
+  z-index: -1;
+}
+
+.design-archives::before {
+  height: 108%;
+  top: -10%;
+}
+.design-archives::after {
+  height: 114%;
+  top: -10%;
+}
+
+.zen-resources::before {
+  height: 108%;
+  top: -8%;
+}
+
+.zen-resources::after {
+  height: 108.5%;
+  top: -6%;
+}
