@@ -193,7 +193,34 @@ p {
   border: 3px solid #45a29e;
   background-color: #45a29d2a;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 0.75rem;
+  margin-right: 1rem;
+  position: relative;
+}
+.supporting > div h3:before {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #45a29e;
+  border-top: 3px solid #45a29e;
+  width: 1rem;
+  height: 1rem;
+  animation: slide-in-left-r 0.3s forwards;
+}
+.supporting > div h3:after {
+  content: "";
+  position: absolute;
+  border-right: 3px solid #45a29e;
+  border-bottom: 3px solid #45a29e;
+  width: 1rem;
+  height: 1rem;
+  animation: slide-in-right-r 0.3s forwards;
+}
+.supporting > div h3:hover::before {
+  animation: slide-in-left 0.3s forwards;
+}
+.supporting > div h3:hover::after {
+  animation: slide-in-right 0.3s forwards;
 }
 .supporting > div p {
   padding: 0 1rem;
@@ -222,6 +249,11 @@ p {
   right: 0;
   margin: 0 auto;
   transition: 30s linear;
+}
+@media (min-width: 800px) {
+  .intro::before {
+    background-image: url(Big-circle.svg);
+  }
 }
 .intro > * {
   padding: 1rem;
@@ -266,7 +298,7 @@ p {
 
 .sidebar {
   margin-top: 100px;
-  margin-bottom: 8rem;
+  margin-bottom: 12rem;
 }
 .sidebar::before {
   content: "";
@@ -385,8 +417,7 @@ footer {
   background-size: 100%;
   padding-top: 150px;
   padding-bottom: 50px;
-  margin-bottom: -150px;
-  max-width: auto;
+  margin-bottom: -68px;
   width: 100%;
   height: 70px;
   text-align: center;
@@ -435,38 +466,6 @@ footer {
   footer {
     padding-top: 210px;
     margin-bottom: -20px;
-  }
-
-  .intro::before {
-    background-image: none;
-    background-image: url(Big-circle.svg);
-  }
-
-  .preamble h3::before {
-    content: "";
-    position: absolute;
-    border: 4px solid #45a29e;
-    border-radius: 5px;
-    width: 1.5rem;
-    height: 1.5rem;
-    z-index: -1;
-    top: 450px;
-    left: 203px;
-    background-color: #45a29e;
-    opacity: 0.3;
-  }
-  .preamble h3::after {
-    content: "";
-    position: absolute;
-    border: 4px solid #66fcf1;
-    border-radius: 9px;
-    width: 2.5rem;
-    height: 2.5rem;
-    z-index: -1;
-    top: 30px;
-    left: 45px;
-    background-color: #66fcf1;
-    opacity: 0.25;
   }
 }
 @media (min-width: 1000px) {
@@ -545,6 +544,7 @@ footer {
     left: 73px;
     background-color: #45a29e;
     opacity: 0.3;
+    animation: moveRight 30s forwards;
   }
   .preamble h3::after {
     content: "";
@@ -558,6 +558,7 @@ footer {
     left: 105px;
     background-color: #66fcf1;
     opacity: 0.25;
+    animation: moveRight 30s 20s forwards;
   }
 }
 @media (min-width: 1200px) {
@@ -865,6 +866,51 @@ a:hover {
 @keyframes spin {
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    top: -0.85rem;
+    left: -0.85rem;
+  }
+  100% {
+    top: -0.2rem;
+    left: -0.2rem;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    right: -0.85rem;
+    bottom: -0.85rem;
+  }
+  100% {
+    right: -0.2rem;
+    bottom: -0.2rem;
+  }
+}
+@keyframes slide-in-left-r {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    top: -0.85rem;
+    left: -0.85rem;
+  }
+}
+@keyframes slide-in-right-r {
+  from {
+    right: 0;
+    bottom: 0;
+  }
+  to {
+    right: -0.85rem;
+    bottom: -0.85rem;
+  }
+}
+@keyframes moveRight {
+  100% {
+    transform: translateX(800px) scale(0);
   }
 }
 
